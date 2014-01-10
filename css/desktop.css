@@ -1,0 +1,8 @@
+#media-query {
+  padding: 80px;
+}
+
+#media-query h1 {
+  font-size: 60px;
+  margin-bottom: 30px;
+}
