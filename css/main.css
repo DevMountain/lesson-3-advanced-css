@@ -1,3 +1,14 @@
+/*
+
+Things to remember:
+
+1. Always use proper indentation in your css and html
+2. An "#" selector or 'id' will override a '.' selector or 'class'
+3. A '.' selector will override a native selector, like 'div'
+
+*/
+
+
 /* Eric Meyer's Reset CSS v2.0 - http://cssreset.com */
 html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}table{border-collapse:collapse;border-spacing:0}
 body {
@@ -13,14 +24,13 @@ body {
   margin: 20px auto;
   padding: 20px;
   background: #e5e5e5;
-  width: 600px;
 }
-  #container:after {
+  /*#container:after {
     content: '';
     clear: both;
     display: block;
     height: 0;
-  }
+  }*/
 
 #content-above {
   padding: 20px;
@@ -93,6 +103,8 @@ body {
   line-height: 1.5em;
 }
 
+/* This will only apply if your screen is between 569px and 1024px wide */
+/* Note the extra set of brackets */
 @media screen and (min-width: 569px) and (max-width: 1024px) {
 
   #media-query {
@@ -104,8 +116,10 @@ body {
     margin-bottom: 30px;
   }
 
-}/* Closing Media Query */
+}
 
+/* This will only apply if your screen is between 569px and 1024px wide */
+/* Note the extra set of brackets */
 @media screen and (min-width: 1025px) {
   #media-query {
     padding: 80px;
@@ -188,7 +202,7 @@ body {
 }
 
 /* Nth Child */
-div.pseudo:nth-child(even) {
+.pseudo:nth-child(2) {
   background: green;
 }
 
@@ -203,6 +217,6 @@ div.pseudo:nth-child(even) {
 }
 
 /* Attribute */
-.pseudo[data-num] {
+.pseudo[data-num="1"] {
   border: 5px solid orange;
 }
